@@ -72,8 +72,9 @@ img {
   clear: both;
 }
 
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
   body {
+    padding: 30px;
     font-size: 35px;
   }
   h1 {
@@ -81,10 +82,28 @@ img {
   }
   h3
   {
-    font-size: 60px;
+    font-size: 75px;
   }
-  .left, .right, .central {
-  display: inline-block;
-  width: 100%;
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 80%;
+    float: none;
+    margin: auto;
+    padding: 15px;
   }
+
+  /* BLOCCO STEPS */
+  .container.grey {
+    background-color: blue;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    float: none;
+    margin: auto;
+    padding: 15px;
+  }
+
 }
